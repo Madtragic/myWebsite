@@ -89,7 +89,7 @@ h3 {
 .site-header ul {
   list-style: none;              /* Remove default bullets */
   margin: 0;                    /* Remove default margin */
-  padding: 0;                   /* Remove default padding */
+  padding: 1000;                   /* Remove default padding */
   display: flex;                /* Arrange list items horizontally */
   gap: 20px;                   /* Space between each nav item */
 }
