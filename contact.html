@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Disco Style</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet" />
+  <link href="style.css?v=1" rel="stylesheet">
+  <!--<link href="style.css" rel="stylesheet" />-->
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <div class="content">
+    <h1>CONTACT ME</h1>
+
+    <h3><a href="mailto:tonylamperti4@gmail.com">Send me a message</a></h3>
+    <h3><a href="https://www.instagram.com/madtragic" target="_blank">Instagram Stuff</a></h3>
+    <h3><a href="https://www.linkedin.com/in/tonylamp/" target="_blank">LinkedIn</a></h3>
+
+    <div class="text-block">
+      <p>Feel free to reach out for collaborations, questions, or just to say hi!</p>
+    </div>
+  </div>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading header:', err));
+  </script>
+</body>
+</html>
+
