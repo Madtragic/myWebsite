@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon - Disco Style</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet" />
+  <link href="style.css?v=1" rel="stylesheet">
+  <!--<link href="style.css" rel="stylesheet">-->
+</head>
+
+<body>
+
+  <!-- Header placeholder for loading header.html -->
+  <div id="header-placeholder"></div>
+
+  <div class="content">
+    <img src="Images/doodleGif.gif" alt="Disco Animation" class="gif" />
+    <h1>TECH ON TAP</h1>
+
+    <!-- Arrow Image -->
+    <!--<img src="Images/arrow.png" alt="Arrow pointing down" class="arrow" />-->
+
+    <!-- New Text Block Below the Arrow -->
+    <div class="text-block">
+      <p>
+        Tailored tech solutions for food &amp; beverage businesses<br>
+        from a nerd with deep hospitality roots.
+     </p>
+    </div>
+  </div>
+
+  <!-- Script to fetch header.html -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading header:', err));
+  </script>
+
+</body>
+
+</html>
