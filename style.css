@@ -1,102 +1,113 @@
+/* Styles for the entire page body */
 body {
-  font-family: 'Spicy Rice', cursive;
-  background-color: #dca6b8;
-  color: #333;
-  text-align: center;
-  padding: 50px;
+  font-family: 'Spicy Rice', cursive;  /* Sets a fancy cursive font */
+  background-color: #dca6b8;           /* Light pink background color */
+  color: #333;                        /* Dark gray text color */
+  text-align: center;                 /* Center all text horizontally */
+  padding: 50px;                     /* Adds space inside edges of body */
 }
 
+/* Styles for main headings (h1) */
 h1 {
-  font-family: 'Spicy Rice', cursive;
-  color: #4CAF50;
-  font-size: 48px;
-  -webkit-text-stroke: 2px black; /* Black outline */
-  letter-spacing: 2px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap; /* Prevent text from wrapping */
+  font-family: 'Spicy Rice', cursive;  /* Same cursive font as body */
+  color: #4CAF50;                      /* Green text color */
+  font-size: 48px;                    /* Large font size */
+  -webkit-text-stroke: 2px black;    /* Adds black outline around text */
+  letter-spacing: 2px;                /* Spaces letters apart */
+  height: 100px;                     /* Fixed height for consistency */
+  display: flex;                     /* Use flexbox for alignment */
+  justify-content: center;           /* Center horizontally */
+  align-items: center;               /* Center vertically */
+  white-space: nowrap;               /* Prevent text wrapping to next line */
 }
 
+/* Styles for elements with class "gif" */
 .gif {
-  display: block;
-  margin: 0 auto 20px;
-  width: 300px;
+  display: block;                    /* Make it a block-level element */
+  margin: 0 auto 20px;              /* Center horizontally, 20px bottom margin */
+  width: 300px;                     /* Fixed width */
 }
 
+/* Container with class "content" */
 .content {
-  margin-top: 150px;
+  margin-top: 150px;                /* Large top margin to push down content */
 }
 
+/* Styles for links inside h3 headings */
 h3 a {
-  color: #4CAF50;
-  text-decoration: none;
-  -webkit-text-stroke: 1px black; /* Outline links */
+  color: #4CAF50;                   /* Green link color */
+  text-decoration: none;            /* Remove underline */
+  -webkit-text-stroke: 1px black;  /* Thin black outline on links */
 }
 
+/* Hover effect for links inside h3 */
 h3 a:hover {
-  text-decoration: underline;
-  color: #333;
+  text-decoration: underline;      /* Underline link on hover */
+  color: #333;                     /* Change text to dark gray on hover */
 }
 
+/* Styles for h3 headings */
 h3 {
-  font-family: 'Bungee', sans-serif;
-  font-weight: bold;
-  margin: 10px 0;
+  font-family: 'Bungee', sans-serif; /* Bold, playful sans-serif font */
+  font-weight: bold;                 /* Make text bold */
+  margin: 10px 0;                   /* Vertical spacing */
 }
 
+/* Styles for elements with class "arrow" */
 .arrow {
-  display: block;
-  margin: 70px auto;
-  width: 300px;
-  max-width: 100%;
-  transform: translateX(-10px) rotate(-35deg); /* Adjusted arrow position */
+  display: block;                   /* Block-level element */
+  margin: 70px auto;                /* Center horizontally with 70px top & bottom margin */
+  width: 300px;                    /* Fixed width */
+  max-width: 100%;                 /* Make sure it never exceeds container width */
+  transform: translateX(-10px) rotate(-35deg); /* Shift left and rotate for effect */
 }
 
+/* Styles for text block with class "text-block" */
 .text-block {
-  margin-top: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  color: #4CAF50;
-  font-size: 12px;
-  -webkit-text-stroke: 1px black;
-  transform: translateX(-20px);
+  margin-top: 20px;                /* Space above */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  color: #4CAF50;                 /* Green text */
+  font-size: 12px;                /* Small font size */
+  -webkit-text-stroke: 1px black; /* Thin black outline */
+  transform: translateX(-20px);  /* Shift text left */
 }
 
+/* Styles for the fixed site header/navigation bar */
 .site-header {
-  position: fixed;   /* Fix it to the viewport */
-  top: 0;            /* Stick to the very top */
-  right: 10px;       /* Small gap from right */
-  left: 0;           /* Full width */
-  width: 100%;       /* Full width header */
-  background: #dca6b8; /* Correct hex color */
-  z-index: 1000;     /* Make sure it stays on top */
-  padding: 10px 20px;
-  justify-content: flex-end; /* Align content to right */
+  position: fixed;                 /* Keep header fixed on screen while scrolling */
+  top: 0;                         /* Stick to the top */
+  right: 10px;                    /* Small gap from right edge */
+  left: 0;                       /* Span full width from left */
+  width: 100%;                   /* Full width */
+  background: #dca6b8;           /* Same pink background as body */
+  z-index: 1000;                 /* Ensure header stays on top of other elements */
+  padding: 10px 20px;            /* Padding inside header */
+  justify-content: flex-end;     /* Align header content to the right */
 }
 
+/* Styles for the navigation list inside header */
 .site-header ul {
-  list-style: none;    /* Remove bullets */
-  margin: 0;
-  padding: 0;
-  display: flex;       /* Lay items side-by-side */
-  gap: 20px;           /* Space between links */
+  list-style: none;              /* Remove default bullets */
+  margin: 0;                    /* Remove default margin */
+  padding: 0;                   /* Remove default padding */
+  display: flex;                /* Arrange list items horizontally */
+  gap: 20px;                   /* Space between each nav item */
 }
 
+/* Styles for list items inside header */
 .site-header li {
-  display: inline;     /* Inline display, not block */
+  display: inline;             /* Display list items inline */
 }
 
+/* Styles for links inside header */
 .site-header a {
-  text-decoration: none;
-  color: #333;         /* Your link color */
-  font-weight: bold;
-  font-size: 1.2em;
+  text-decoration: none;       /* Remove underline from links */
+  color: #333;                 /* Dark gray text color */
+  font-weight: bold;           /* Bold font */
+  font-size: 1.2em;            /* Slightly larger font size */
 }
 
+/* Hover effect for header links */
 .site-header a:hover {
-  color: #ff3366;      /* Highlight color on hover */
+  color: #ff3366;              /* Pink highlight color on hover */
 }
-
-
-
