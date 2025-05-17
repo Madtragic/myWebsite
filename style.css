@@ -67,9 +67,9 @@ h3 {
   margin-top: 20px;                /* Space above */
   font-family: 'Courier New', Courier, monospace; /* Monospaced font */
   color: #4CAF50;                 /* Green text */
-  font-size: 12px;                /* Small font size */
+  font-size: 16px;                /* Small font size */
   -webkit-text-stroke: 1px black; /* Thin black outline */
-  transform: translateX(-20px);  /* Shift text left */
+  transform: translateX(0);  
 }
 
 /* Styles for the fixed site header/navigation bar */
@@ -89,7 +89,7 @@ h3 {
 .site-header ul {
   list-style: none;              /* Remove default bullets */
   margin: 0;                    /* Remove default margin */
-  padding: 1000;                   /* Remove default padding */
+  padding: 10;                   /* Remove default padding */
   display: flex;                /* Arrange list items horizontally */
   gap: 20px;                   /* Space between each nav item */
 }
